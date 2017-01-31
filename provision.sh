@@ -6,7 +6,7 @@ php_config_file="/etc/php5/apache2/php.ini"
 xdebug_config_file="/etc/php5/mods-available/xdebug.ini"
 mysql_config_file="/etc/mysql/my.cnf"
 default_apache_index="/var/www/html/index.html"
-project_web_root="src"
+project_web_root="symfony/web"
 
 # This function is called at the very bottom of the file
 main() {
