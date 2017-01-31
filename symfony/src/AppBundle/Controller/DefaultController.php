@@ -49,9 +49,14 @@ class DefaultController extends Controller
     public function pageAction(Request $request, $numero = 1) {
         $foo = $request->query->get('foo');
 
+        $language = $request->getPreferredLanguage(array('en','it'));
+        $ip = $request->getClientIp();
+
         return [
             'numero' => $numero,
-            'foo' => $foo
+            'foo' => $foo,
+            'language' => $language,
+            'ip' => $ip
         ];
     }
 }

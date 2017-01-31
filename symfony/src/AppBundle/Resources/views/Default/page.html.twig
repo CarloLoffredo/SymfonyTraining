@@ -3,7 +3,9 @@
 ciao metti qui il tuo html<br>
 pag numero: {{ numero }}<br>
 {% if foo is not empty %}
-filtro con foo = {{ foo }}
+filtro con foo = {{ foo }}<br>
 {% endif %}
+preferred language: {{ language }}<br>
+your ip: {{ app.request.getClientIp() }}
 </body>
 </html>
